@@ -111,7 +111,7 @@ def create_user():
         from_email='playbuildpro@gmail.com',
         to_emails=email,
         subject = f'Welcome to {crud.get_show_by_id(session["show_id"]).title}!',
-        html_content=f'<strong>Break a leg {fname} {lname}!</strong> <p>Please register to <a href="https://www.playbuildpro.com">PlayBuild Pro</a>\
+        html_content=f'<strong>Break a leg {fname} {lname}!</strong> <p>Please register to <a href="http://35.86.170.99/">PlayBuild Pro</a>\
             with {email}  to access your show account and upload your Playbill Bio and Headshot for <i>{crud.get_show_by_id(session["show_id"]).title}</i> at {crud.get_show_by_id(session["show_id"]).company.name}! You can edit this information at anytime\
                 during the run of your show and, once approved, see those changes rendered to the virtual Playbill!</p>'
     )
